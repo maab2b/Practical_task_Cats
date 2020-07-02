@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1000px;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+.cat {
+    overflow: hidden;
+    width: min-content;
+    height: 150px;
+    margin: 2.5px;
+}
+
