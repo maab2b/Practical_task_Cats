@@ -7,7 +7,7 @@ body {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    width: 1000px;
+    width: 900px;
     height: 100%;
     margin: 0 auto;
     padding: 10px;
@@ -15,7 +15,7 @@ body {
 }
 
 .cat {
-    flex: 1 0 230px;
+    flex: 1 0 200px;
     width: max-content;
     height: 150px;
     margin: 10px;
@@ -31,7 +31,7 @@ body {
 }
 
 .cat:nth-child(4n+1) {
-    flex-basis: 250px;
+    flex-basis: 230px;
 }
 .cat:nth-child(4n+2) {
     flex-basis: 270px;
