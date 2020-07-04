@@ -1,20 +1,53 @@
 body {
     margin: 0;
+    box-sizing: border-box;
 }
 
 .wrapper {
     display: flex;
-    padding: 10px;
     flex-flow: row wrap;
+    justify-content: center;
     width: 1000px;
+    height: 100%;
     margin: 0 auto;
-    min-height: 100vh;
+    padding: 10px;
+    background-color: beige;
 }
 
 .cat {
-    overflow: hidden;
+    flex: 1 0 230px;
     width: max-content;
     height: 150px;
-    margin: 5px;
+    margin: 10px;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
+.cat img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .3s cubic-bezier(.76,.19,.84,.29);
+}
+
+.cat:nth-child(4n+1) {
+    flex-basis: 250px;
+}
+.cat:nth-child(4n+2) {
+    flex-basis: 270px;
+}
+.cat:nth-child(4n+3) {
+    flex-basis: 300px;
+}
+.cat:last-child {
+    flex: 1 0 calc(100% - 20px);
+}
+
+.cat:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,0.9);
+}
+
+.cat:hover img {
+    transform: scale(1.1) rotate(-1deg);
+    cursor: crosshair;
+}
